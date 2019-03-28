@@ -41,7 +41,7 @@
   if(isset($_GET['number'])) {
     table($_GET['number']);
   } else {
-    echo "No hay valor para hacer tabla de multiplicar";
+    echo "No hay valor para hacer tabla de multiplicar <br><br>";
   }
 
   /*
@@ -49,6 +49,16 @@
     ../12-Funciones/?number=8
     Donde number es la variable creada
     Y 8 es el valor que se obtiene
-  */
+    */
+
+  //Get all the tables
+  for ($i=1; $i <= 10 ; $i++) {
+    table($i);
+  }
+
+  /*
+    Parametro = Es una variable que le pasamos
+    a un función, para tenerla disponible dentro de ella
+    */
 
  ?>
